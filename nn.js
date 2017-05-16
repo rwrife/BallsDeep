@@ -182,19 +182,28 @@ function sigmoid(m, isDeriv) {
     }
 }
 
+
+
+///------TEST Network----------///
+
+
+//setup some random weights
 var syn0 = (new Matrix(3,1)).random().map((x,y,e) => {
     return e*2;
 }).map((x,y,e) => {
     return e-1;
 });
 
+//our feature data
 X = new Matrix([  [0,0,1],
                 [0,1,1],
                 [1,0,1],
                 [1,1,1] ]);
 
-y = (new Matrix([[0,0,1,1]])).transpose(); //labels
+//our label data (ie the stuff we'll predict later)
+y = (new Matrix([[0,0,1,1]])).transpose(); 
 
+//do 10k iterations, testing different weights
 for (var i=0;i<10000;i++) {
 
     // forward propagation
