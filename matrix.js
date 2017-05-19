@@ -54,6 +54,10 @@ function Matrix(array, y) {
         return new Matrix(mapArray);
     }
 
+    this.mapcol = function() {
+        
+    }
+
     this.fill = function(v) {
         var a = this.map((x, y, e) => {
             return v;
