@@ -1,12 +1,11 @@
-/*var BD = require('./ballsdeep.js');
+var BD = require('./ballsdeep.js');
 BD.loadData('./binary.csv', 'label');
 BD.NonLinearNetwork.train();
 
 console.log("Output After Training:")
 console.log(BD.results.array())
 
-*/
-
+/*
 var act = require('./activation.js');
 var matrix = require('./matrix.js');
 var m = new matrix([
@@ -15,3 +14,4 @@ var m = new matrix([
 ]);
 
 console.log(act.softmax(m).array())
+*/
