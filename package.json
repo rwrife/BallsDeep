@@ -1,0 +1,19 @@
+{
+  "name": "ballsdeep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/rwrife/ballsdeep.git"
+  },
+  "author": "Ryan Rife",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/rwrife/ballsdeep#readme",
+  "dependencies": {
+    "csv-parse": "^1.2.0"
+  }
+}
