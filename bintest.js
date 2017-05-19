@@ -28,6 +28,6 @@ for (var i = 0; i < 10000; i++) {
 
     syn0 = syn0.add(l0.transpose().dot(l1_delta).transpose());
 }
-
+console.log(BD.fields);
 console.log("Output After Training:")
 console.log(l1.array())
