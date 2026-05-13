@@ -1,19 +1,50 @@
 {
   "name": "ballsdeep",
-  "version": "1.0.0",
-  "description": "",
-  "main": "matrix.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "2.0.0",
+  "description": "Lightweight numpy/PyTorch-style numerical computing and ML library for Node.js and the browser. Pure JS, zero runtime dependencies.",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./nn": "./src/nn/index.js",
+    "./optim": "./src/optim/index.js",
+    "./data": "./src/data/index.js",
+    "./models": "./src/models/index.js"
   },
+  "files": [
+    "src",
+    "README.md",
+    "PLAN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test",
+    "example:xor": "node examples/xor.js",
+    "example:binary": "node examples/binary.js",
+    "example:linear": "node examples/linear-regression.js",
+    "example:periodic": "node examples/periodic.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ml",
+    "machine-learning",
+    "deep-learning",
+    "neural-network",
+    "tensor",
+    "autograd",
+    "ndarray",
+    "numpy",
+    "pytorch",
+    "browser"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/rwrife/ballsdeep.git"
+    "url": "git+https://github.com/rwrife/BallsDeep.git"
   },
   "author": "Ryan Rife",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/rwrife/ballsdeep#readme",
-  "dependencies": {
-    "csv-parse": "^1.2.0"
-  }
+  "homepage": "https://github.com/rwrife/BallsDeep#readme"
 }
