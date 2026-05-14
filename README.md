@@ -7,7 +7,6 @@ pure JS.
 
 > v1 was a single hand-rolled sigmoid net. v2 is a real layered library. See
 > [`PLAN.md`](./PLAN.md) for the architecture and the v1 → v2 rewrite story.
-> The original code lives untouched in [`legacy/`](./legacy/).
 
 ## Install
 
@@ -162,10 +161,9 @@ src/
   nn/              # Module, Linear, activations, losses
   optim/           # SGD, Adam
   data/            # CSV, scalers, split, one-hot
-  models/          # LinearRegression, LogisticRegression, KNN
+  models/          # LinearRegression, LogisticRegression, KNN, MLPClassifier, MLPRegressor
 test/              # node --test
 examples/          # runnable scripts
-legacy/            # original v1 code, kept for reference
 PLAN.md            # architecture + roadmap
 ```
 

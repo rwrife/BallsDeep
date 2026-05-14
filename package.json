@@ -19,7 +19,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --test test",
+    "test": "node --test test/*.test.js",
     "example:xor": "node examples/xor.js",
     "example:binary": "node examples/binary.js",
     "example:linear": "node examples/linear-regression.js",
